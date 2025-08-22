@@ -1,0 +1,42 @@
+# CODEOWNERS file for social-manager-480
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-billing @Armor-test/dept-test @Armor-test/dept-identity
+
+# Directory ownership
+/app/ @Armor-test/squad-frontend @Armor-test/team-security
+/security/ @Armor-test/squad-performance @Armor-test/dept-ui
+/ui/ @Armor-test/dept-release @Armor-test/team-frontend @Armor-test/dept-test
+/services/ @Armor-test/team-frontend @Armor-test/grp-ui
+/deploy/ @Armor-test/team-frontend @Armor-test/dept-data
+/pages/ @Armor-test/dept-automation @Armor-test/squad-ml @Armor-test/squad-payments
+/db/ @Armor-test/squad-ml @Armor-test/dept-notifications
+/tests/ @Armor-test/unit-devops @Armor-test/dept-security
+/modules/ @Armor-test/squad-payments @Armor-test/squad-research
+/scripts/ @Armor-test/squad-apps @Armor-test/squad-mobile
+/lib/ @Armor-test/dept-api @Armor-test/team-research @Armor-test/grp-search
+/internal/ @Armor-test/squad-api @Armor-test/squad-qa
+/examples/ @Armor-test/dept-api @Armor-test/dept-logging @Armor-test/grp-ui
+/tools/ @Armor-test/team-governance @Armor-test/dept-automation @Armor-test/dept-api
+/helpers/ @Armor-test/grp-ui @Armor-test/squad-mobile
+
+# File type ownership
+*.toml @Armor-test/team-logging @Armor-test/squad-apps
+*.xml @Armor-test/grp-storage @Armor-test/team-security
+*.cs @Armor-test/grp-storage @Armor-test/team-reporting @Armor-test/team-notifications
+*.gradle @Armor-test/dept-identity @Armor-test/grp-storage
+*.scala @Armor-test/dept-identity @Armor-test/squad-research @Armor-test/team-notifications
+*.java @Armor-test/dept-reporting @Armor-test/dept-logging
+*.ts @Armor-test/dept-logging @Armor-test/grp-integration
+*.js @Armor-test/grp-integration @Armor-test/unit-devops
+*.tf @Armor-test/squad-mobile @Armor-test/grp-integration
+*.rb @Armor-test/squad-mobile @Armor-test/dept-automation
+*.rs @Armor-test/grp-reporting @Armor-test/unit-devops @Armor-test/squad-ml
+*.proto @Armor-test/squad-api @Armor-test/dept-automation @Armor-test/grp-api
+*.md @Armor-test/dept-security @Armor-test/grp-storage
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
